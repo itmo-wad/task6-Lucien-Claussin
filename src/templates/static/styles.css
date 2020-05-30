@@ -1,0 +1,43 @@
+#top {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+
+    box-shadow: azure;
+}
+
+#gallery {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#gallery .content {
+    width: calc(100% + 250px);
+    transform: translate(-125px, 0px);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#gallery .container {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+#gallery .container img {
+    width: 100%;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+#gallery .container:hover img {
+    transform: scale(1.5);
+    transition-duration: 1s;
+}

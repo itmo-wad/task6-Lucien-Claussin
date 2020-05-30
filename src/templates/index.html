@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body style="background: dimgrey">
+    <div id="top">
+        Task1 of WAD courses
+    </div>
+    <div id="gallery">
+        <div class="content">
+        </div>
+    </div>
+</body>
+
+<script>
+
+    let gallery = document.querySelector(".content")
+    for (i = 1; i < 9; i++) {
+        let container = document.createElement("div")
+        container.classList.add("container")
+
+        let title = document.createElement("div")
+        title.classList.add("caption")
+        title.innerHTML = "photo number: " + i
+
+        let images = document.createElement("img")
+        images.src = "static/Images/" + i + ".jpg"
+
+        container.appendChild(title)
+        container.appendChild(images)
+        gallery.appendChild(container)
+    }
+
+</script>
+
+</html>
