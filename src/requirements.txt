@@ -6,7 +6,7 @@ Flask==1.1.2
 gmpy2==2.0.8
 idna==2.8
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.14.0
 kiwisolver==1.1.0
 MarkupSafe==1.1.1
